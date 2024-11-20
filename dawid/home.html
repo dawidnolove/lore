@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Główna - Posty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 3px 10px #000;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background-image: url('ptok.png');
+            background-size: cover;
+            border-radius: 50%;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .layout {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 20%;
+            max-width: 250px;
+            background-color: #333;
+            padding: 20px;
+            box-shadow: 2px 0px 10px #000;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            background-color: #444;
+            transition: background 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .post {
+            background-color: #333;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px #000;
+            max-width: 600px;
+        }
+
+        .post h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            color: #ccc;
+        }
+
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+            color: #aaa;
+            box-shadow: 0px -3px 10px #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notifications</a>
+            <a href="#">Messages</a>
+        </nav>
+    </header>
+
+    <div class="layout">
+        <div class="sidebar">
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </div>
+        
+        <div class="main-content">
+            <h1>Posty użytkowników</h1>
+            <div class="post">
+                <h3>Użytkownik 1</h3>
+                <p>To jest przykładowy post użytkownika.</p>
+            </div>
+            <div class="post">
+                <h3>Użytkownik 2</h3>
+                <p>Kolejny ciekawy post!</p>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <a href="#">Pomoc</a>
+            <a href="#">Kontakt</a>
+            <a href="#">Regulamin</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LoreNest. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
